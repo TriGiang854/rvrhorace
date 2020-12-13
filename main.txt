@@ -1,24 +1,27 @@
-async horace_star() {
+async function startProgram(){
+await horace_star(75)
 
-	await roll(18, 55, 3.0) //first vertex
+async horace_star(speed) {
+
+	await roll(18, speed, 3.0) //first vertex
 	await stopRoll()
-	await roll(162, 55, 3.4) //first to second
+	await roll(162, speed, 3.4) //first to second
 	await stopRoll()
-	await roll(90, 55, 3.4) //second vertex
+	await roll(90, speed, 3.4) //second vertex
 	await stopRoll()
-	await roll(234, 55, 3.4) //second to third
+	await roll(234, speed, 3.4) //second to third
 	await stopRoll()
-	await roll(162, 55, 3.4) //third vertex
+	await roll(162, speed, 3.4) //third vertex
 	await stopRoll()
-	await roll(306, 55, 3.4) //third to fourth
+	await roll(306, speed, 3.4) //third to fourth
 	await stopRoll()
-	await roll(234, 55, 3.4) //fourth vertex
+	await roll(234, speed, 3.4) //fourth vertex
 	await stopRoll()
-	await roll(18, 55, 3.4) //fourth to fifth
+	await roll(18, speed, 3.4) //fourth to fifth
 	await stopRoll()
-	await roll(306, 55, 3.4) //fifth vertex
+	await roll(306, speed, 3.4) //fifth vertex
 	await stopRoll()
-	await roll(90, 55, 3.4) //fifth to first
+	await roll(90, speed, 3.4) //fifth to first
 	await stopRoll()
 	await roll(0, 50, 0.1) //reset
 
